@@ -24,5 +24,15 @@ header {
         /* identical to box height */
         letter-spacing: -0.346154px;
         color: $main-color;
+        &__list {
+            min-width: 66px + 67px + 29px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: $main-color;
+        }
     }
 }
