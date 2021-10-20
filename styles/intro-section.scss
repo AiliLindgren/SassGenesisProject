@@ -1,0 +1,52 @@
+@use 'fonts';
+@use 'colors';
+@use "sass:math";
+
+.intro-container {
+    display: flex;
+    justify-content: space-between;
+    &__left {
+        max-width: math.div(635px, 1110px) * 100%;
+        width: 100%;
+        h2 {           
+            @include fonts.font-normal;
+            font-weight: fonts.$bold;
+            @include fonts.h2-size-line;
+            letter-spacing: -0.423077px;
+            color: colors.$link-color;                
+        }
+        
+        h1 {
+            @include fonts.font-normal;
+            font-weight: fonts.$bold;
+            @include fonts.h1-size-line;
+            color: colors.$main-color;
+        }
+    }
+
+    &__right {
+        max-width: math.div(212px, 1110px) * 100%;
+        width: 100%;
+        align-self: flex-end;
+        transform: translate(-30%, -10%);
+        &__rectangle {
+            max-width: math.div(30px, 212px) * 100%;            
+            width: 100%;
+            min-height: 2px;
+            background: colors.$main-color;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+        }
+
+        h3 {
+            font-family: fonts.$main-font;
+            font-style: italic;
+            font-weight: normal;
+            @include fonts.h3-size-line;
+            color: colors.$main-color;
+            mix-blend-mode: normal;
+            opacity: 0.6;
+            margin-top: 9px;      
+        }
+    }
+}

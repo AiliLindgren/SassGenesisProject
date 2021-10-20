@@ -1,11 +1,14 @@
-@use 'fonts-and-colors';
+@use 'fonts';
+@use 'colors';
 
-$main-font: 'Mulish', sans-serif;
-$font-regular: 400;
-$font-bold: 700;
-$font-italic: italic;
+// @import 'fonts-and-colors';
 
-$main-color: #111111;
+// $main-font: 'Mulish', sans-serif;
+// $font-regular: 400;
+// $font-bold: 700;
+// $font-italic: italic;
+
+// $main-color: #111111;
 
 header {
     max-width: 1110px;
@@ -16,14 +19,14 @@ header {
     justify-content: space-between;
     align-items: baseline;    
     .nav {
-        font-family: $main-font;
+        font-family: fonts.$main-font;
         font-style: normal;
-        font-weight: $font-bold;
+        font-weight: fonts.$bold;
         font-size: 18px;
         line-height: 23px;
         /* identical to box height */
         letter-spacing: -0.346154px;
-        color: $main-color;
+        color: colors.$main-color;
         &__list {
             min-width: 66px + 67px + 29px;
             display: flex;
@@ -32,7 +35,7 @@ header {
 
         &__link {
             text-decoration: none;
-            color: $main-color;
+            color: colors.$main-color;
         }
     }
 }

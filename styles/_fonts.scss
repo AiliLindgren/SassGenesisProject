@@ -1,0 +1,39 @@
+$main-font: 'Mulish', sans-serif;
+$regular: 400;
+$bold: 700;
+$italic: italic;
+
+$size-h1: 40px;
+$size-h2: 22px;
+$size-h3: 18px;
+$size-h4: 16px;
+
+@mixin font-normal {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+}
+
+@mixin h1-size-line {
+    font-size: 40px;
+    line-height: 60px;
+}
+
+@mixin h2-size-line {
+    font-size: 22px;
+    line-height: 28px;
+}
+
+@mixin h3-size-line {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+@mixin h4-size-line {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+// Testing.
+@mixin font-values($property, $font-weight-value) {
+    #{$property}: $font-weight-value;    
+}
