@@ -1,0 +1,28 @@
+@use 'fonts-and-colors';
+
+$main-font: 'Mulish', sans-serif;
+$font-regular: 400;
+$font-bold: 700;
+$font-italic: italic;
+
+$main-color: #111111;
+
+header {
+    max-width: 1110px;
+    width: 100%;
+    height: 2vh;
+    margin-top: 60px;
+    display: flex;    
+    justify-content: space-between;
+    align-items: baseline;    
+    .nav {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: $font-bold;
+        font-size: 18px;
+        line-height: 23px;
+        /* identical to box height */
+        letter-spacing: -0.346154px;
+        color: $main-color;
+    }
+}
