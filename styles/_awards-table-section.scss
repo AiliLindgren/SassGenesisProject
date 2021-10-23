@@ -1,0 +1,14 @@
+@use 'fonts';
+@use 'colors';
+@use 'sass:math';
+
+.awards-table {
+    max-width: 1110px;
+    width: 100%;
+    @include fonts.font-normal;
+    color: colors.$main-color;
+        h2 {
+            font-weight: fonts.$bold;
+            @include fonts.h2-size-line;
+        }
+}
