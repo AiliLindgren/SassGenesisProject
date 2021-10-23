@@ -1,0 +1,40 @@
+@use 'fonts';
+@use 'colors';
+@use 'sass:math';
+
+.main-info {
+    max-width: 1079px;
+    width: 100%;
+    @include fonts.font-normal;
+    color: colors.$main-color;
+    display: flex;
+    justify-content: space-between;
+    &__text {
+        max-width: math.div(635px, 1079px) * 100%;
+        font-weight: fonts.$bold;
+        font-size: 28px;
+        line-height: 38px;
+        /* or 136% */
+    }
+
+    &__links-container {
+        font-weight: fonts.$regular;
+        font-size: 18px;
+        line-height: 23px;
+        /* identical to box height */
+        mix-blend-mode: normal;
+        opacity: 0.6;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        a {
+            color: colors.$main-color;            
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: colors.$link-color;
+        }
+    }
+}

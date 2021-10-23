@@ -37,5 +37,9 @@ header {
             text-decoration: none;
             color: colors.$main-color;
         }
+
+        &__link:hover {
+            color: colors.$link-color;
+        }
     }
 }
