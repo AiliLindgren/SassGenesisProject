@@ -3,6 +3,7 @@
 @use 'sass:math';
 
 .intro-container {
+    margin-top: math.div(96px, 1110px) * 100%;
     display: flex;
     justify-content: space-between;
     &__left {
@@ -12,7 +13,7 @@
             @include fonts.font-normal;
             font-weight: fonts.$bold;
             @include fonts.h2-size-line;
-            letter-spacing: -0.423077px;
+            letter-spacing: -0.423077px;            
         }
         
         h1 {
@@ -20,6 +21,7 @@
             font-weight: fonts.$bold;
             @include fonts.h1-size-line;
             color: colors.$main-color;
+            margin-top: 32px;
         }
         
         a {

@@ -1,5 +1,6 @@
 @use 'fonts';
 @use 'colors';
+@use 'sass:math';
 
 @import 'header';
 @import 'intro-section';
@@ -8,7 +9,7 @@
 @import 'awards-table-section';
 @import 'footer';
 
-body {
+body {    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,12 +18,19 @@ body {
 main {
     max-width: 1110px;
     width: 100%;
-    margin-top: 96px;
-
     .divider {
         max-width: 1110px;
         width: 100%;
         min-height: 2px;
+        margin-bottom: math.div(50px, 1110px) * 100%;
         background: #D8D8D8;
+    }
+
+    .divider-middle {
+        margin-top: math.div(58px, 1110px) * 100%;
+    }
+
+    .divider-bottom {
+        margin-top: math.div(57px, 1110px) * 100%;
     }
 }
