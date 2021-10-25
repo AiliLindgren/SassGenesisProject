@@ -1,8 +1,8 @@
 @use 'fonts';
 @use 'colors';
 
-header {
-    max-width: 1109px;
+footer {
+    max-width: 1110px;
     width: 100%;
     height: 2vh;
     margin-top: 60px;
@@ -10,6 +10,7 @@ header {
     justify-content: space-between;
     align-items: baseline;    
     .nav {
+        width: 66px + 67px + 30px + 95px + 95px;
         font-family: fonts.$main-font;
         font-style: normal;
         font-weight: fonts.$bold;
@@ -18,19 +19,32 @@ header {
         /* identical to box height */
         letter-spacing: -0.346154px;
         color: colors.$main-color;
+        display: flex;
+        // justify-content: flex-start;
+        justify-content: space-between;
         &__list {
-            min-width: 66px + 67px + 29px;
+            width: 66px + 67px + 30px;
             display: flex;
             justify-content: space-between;
         }
 
-        &__link {
+        &__icon-list {
+            width: 95px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__link{
             text-decoration: none;
             color: colors.$main-color;
         }
 
         &__link:hover {
             color: colors.$link-color;
+        }
+
+        &__icon:hover {
+            background-color: colors.$link-color;
         }
     }
 }
