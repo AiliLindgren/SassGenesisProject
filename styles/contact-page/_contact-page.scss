@@ -1,0 +1,30 @@
+@use 'fonts';
+@use 'colors';
+@use 'sass:math';
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    @include fonts.font-normal;
+    .heading-container {
+        max-width: math.div(475px, 1110px) * 100%;
+        width: 100%;
+        h1 {
+            font-weight: fonts.$bold;
+            font-size: fonts.$size-h1;
+            line-height: 55px;
+            color: colors.$main-color;
+        }
+
+        p {
+            @include fonts.p-font;
+        }
+    }
+
+
+
+    
+    .map-container {
+        margin-bottom: math.div(46px, 1110px) * 100%;
+    }
+}

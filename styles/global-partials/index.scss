@@ -2,6 +2,7 @@
 @use 'colors';
 @use 'sass:math';
 
+// LANDING PAGE
 @import 'header';
 @import 'intro-section';
 @import 'main-pictures-section';
@@ -9,8 +10,12 @@
 @import 'awards-table-section';
 @import 'footer';
 
+// PROJECTS PAGE
 @import 'projects';
 @import 'project-page-text-and-images';
+
+// CONTACT PAGE
+@import 'contact-page';
 
 body {    
     display: flex;
