@@ -33,6 +33,16 @@ $size-h4: 16px;
     line-height: 20px;
 }
 
+@mixin p-font {    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    color: #111111;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
 // Testing.
 @mixin font-values($property, $font-weight-value) {
     #{$property}: $font-weight-value;    

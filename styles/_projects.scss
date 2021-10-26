@@ -25,13 +25,7 @@
 
         p {
             margin-top: 19px;
-            font-weight: fonts.$regular;
-            font-size: 16px;
-            line-height: 26px;
-            /* or 162% */
-            color: colors.$main-color;
-            mix-blend-mode: normal;
-            opacity: 0.8;
+            @include fonts.p-font;
         }
     }
 
