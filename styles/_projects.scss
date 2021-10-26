@@ -7,6 +7,7 @@
 
 .project-info-container {
     margin-top: math.div(100px, 1110px) * 100%;
+    margin-bottom: math.div(61px, 1110px) * 100%;
     @include fonts.font-normal;
     box-sizing: border-box;
     display: flex;
@@ -38,7 +39,7 @@
         max-width: math.div(335px, 1110px) * 100%;
         width: 100%;
         display: grid;
-        grid-template-rows: repeat(6 minmax(10px, 1fr));
+        grid-template-rows: auto;
         grid-template-columns: minmax(10px, 1fr) minmax(10px, 1.5fr);
         grid-auto-flow: row;
         align-items: end;
