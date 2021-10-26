@@ -1,0 +1,17 @@
+@use 'fonts';
+@use 'colors';
+@use 'sass:math';
+
+.text-container {
+    margin-top: math.div(45px, 1110px) * 100%;
+    @include fonts.font-normal;
+    @include fonts.p-font;   
+}
+
+.images-container {
+    margin-top: math.div(45px, 1110px) * 100%;
+    margin-bottom: math.div(68px, 1110px) * 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
