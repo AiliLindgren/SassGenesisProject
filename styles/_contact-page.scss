@@ -9,6 +9,7 @@
     .heading-container {
         max-width: math.div(475px, 1110px) * 100%;
         width: 100%;
+        margin-top: math.div(110px, 1110px) * 100%;
         h1 {
             font-weight: fonts.$bold;
             font-size: fonts.$size-h1;
@@ -20,7 +21,6 @@
             @include fonts.p-font;
         }
     }
-
 
 
     
