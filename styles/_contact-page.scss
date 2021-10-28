@@ -6,11 +6,12 @@
     display: flex;
     justify-content: space-between;
     @include fonts.font-normal;
+    margin-top: math.div(110px, 1110px) * 100%;
     .heading-container {
         max-width: math.div(475px, 1110px) * 100%;
         width: 100%;
-        margin-top: math.div(110px, 1110px) * 100%;
         h1 {
+            max-width: math.div(465px, 475px) * 100%;
             font-weight: fonts.$bold;
             font-size: fonts.$size-h1;
             line-height: 55px;
@@ -18,13 +19,61 @@
         }
 
         p {
+            max-width: math.div(445px, 475px) * 100%;
+            margin-top: 25px;
             @include fonts.p-font;
         }
     }
 
-
-    
-    .map-container {
-        margin-bottom: math.div(46px, 1110px) * 100%;
+    .form-container {
+        max-width: math.div(475px, 1110px) * 100%;
+        width: 100%;
+        margin-bottom: 20px;
     }
+
+    // I did not nest the selectors below inside the .form-container selector so that I would not nest more than three levels.
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        
+        .label {
+            @include fonts.p-font;
+            font-weight: 700;
+            line-height: 20px;
+            opacity: 0.6;            
+        }
+        
+        .input-field {
+            margin-bottom: math.div(46px, 475px) * 100%;
+            border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+            border-bottom: 1px solid #D8D8D8;
+        }
+        
+        .last {
+            margin-bottom: math.div(38px, 475px) * 100%;
+        }
+        
+        .btn {
+            width: 125px;
+            height: 50px;
+            background-color: #4A4FF2;
+            color: #FFFFFF;
+            border: none;
+            opacity: 1;
+            transition: background-color 0.4s;
+        }
+        
+        .btn:hover {
+            background-color: rgb(9, 9, 157);
+            cursor: pointer;
+        }
+    }    
+}
+    
+.map-container {
+    margin-top: math.div(100px, 1110px) * 100%;
+    margin-bottom: math.div(46px, 1110px) * 100%;
 }
