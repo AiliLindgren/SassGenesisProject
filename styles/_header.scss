@@ -8,7 +8,11 @@ header {
     margin-top: 60px;
     display: flex;    
     justify-content: space-between;
-    align-items: baseline;    
+    align-items: baseline; 
+    .logo-link:hover {
+        background-color: colors.$link-color;      
+    }  
+
     .nav {
         font-family: fonts.$main-font;
         font-style: normal;

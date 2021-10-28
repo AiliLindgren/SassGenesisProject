@@ -10,6 +10,10 @@ footer {
     display: flex;    
     justify-content: space-between;
     align-items: baseline;    
+    .logo-link:hover {
+        background-color: colors.$link-color;      
+    } 
+    
     .nav {
         width: 66px + 67px + 30px + 95px + 95px;
         font-family: fonts.$main-font;
@@ -22,6 +26,7 @@ footer {
         color: colors.$main-color;
         display: flex;
         justify-content: space-between;
+
         &__list {
             width: 66px + 67px + 30px;
             display: flex;
